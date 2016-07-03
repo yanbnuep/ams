@@ -1,0 +1,19 @@
+.nav {
+  & ul {
+    position: relative;
+    display: table;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    & li {
+      position: relative;
+      display: table-cell;
+      & a {
+        position: relative;
+        display: block;
+        padding: 10px 5px;
+        text-decoration: none;
+      }
+    }
+  }
+}
