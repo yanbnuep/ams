@@ -23,3 +23,23 @@
     zoom: 1;/* For IE 6/7 (trigger hasLayout) */
   }
 }
+
+@mixin opacity($nb) {
+  /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$nb)";
+
+  /* IE 5-7 */
+  filter: alpha(opacity=$nb);
+
+  /* Netscape */
+  -moz-opacity: $nb;
+
+  /* Safari 1.x */
+  -khtml-opacity:$nb;
+
+  /* Good browsers */
+  opacity: $nb;
+
+  zoom: 1;
+
+}

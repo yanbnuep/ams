@@ -393,6 +393,22 @@ html {
 *, *:before, *:after {
   box-sizing: inherit; }
 
+body {
+  background-color: #f0f0f0; }
+
+.shell {
+  position: relative;
+  width: 960px;
+  margin: 0 auto; }
+  .shell:before, .shell:after {
+    content: " ";
+    display: table; }
+  .shell:after {
+    clear: both; }
+  .shell {
+    zoom: 1;
+    /* For IE 6/7 (trigger hasLayout) */ }
+
 .z-depth-0 {
   box-shadow: none !important; }
 
