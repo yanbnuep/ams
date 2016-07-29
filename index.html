@@ -1,11 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta http-equiv="x-ua-compatible" content="IE=Edge"/>
+    <link rel="stylesheet" href="./stylesheet/ams.css">
+    <link rel="stylesheet" href="./resource/font/font.css">
+    <link rel="stylesheet" href="./resource/icons/icon-font/material-icons.css">
+    <script src="js/external/jquery-1.12.4.min.js"></script>
+    <script src="./js/ams/form.js"></script>
+    <script src="./js/external/waves.js"></script>
+    <script src="./js/ams/img-slider.js"></script>
     <meta charset="UTF-8">
-    <title>intranet</title>
-    <link rel="stylesheet" href="./scss/ams.css">
+    <title>Title</title>
 </head>
-<body>
 
+<body class="">
+<div class="header">
+    <div class="shell" style="border-bottom: 1px solid #CCCCCC">
+        <div class="header-left">
+            <div class="header-logo">
+                <img src="./resource/img/company-logo.png" alt=""/>
+            </div>
+        </div>
+        <div class="header-right">
+            <ul class="nav-menu">
+                <li class="nav-items"><a href="">Main</a></li>
+                <li class="nav-items"><a href="">Telephone Directory</a></li>
+                <li class="nav-items"><a href="">Services</a>
+                    <ul class="nav-menu-pop">
+                        <li class="nav-items-pop"><a href="">E-Service</a></li>
+                        <li class="nav-items-pop"><a href="">ICS</a></li>
+                        <li class="nav-items-pop"><a href="">Crew Zone</a></li>
+                        <li class="nav-items-pop"><a href="">Outstation E-Mail System</a></li>
+                        <li class="nav-items-pop"><a href="">Flight Schedule</a></li>
+                        <li class="nav-items-pop"><a href="">Flight Information Board</a></li>
+                        <li class="nav-items-pop"><a href="">AMASIS Remote Access</a></li>
+                        <li class="nav-items-pop"><a href="">Information for Expatriate Staff</a></li>
+                        <li class="nav-items-pop"><a href="">CCD Marking System</a></li>
+                    </ul>
+                </li>
+                <li class="nav-items"><a href="">Download</a></li>
+                <li class="nav-items"><a href="">Links</a></li>
+                <li class="nav-items nav-separate-line-left "><a href="">Check In</a></li>
+                <li class="nav-items nav-separate-line-left nav-separate-line-right "><a id="search-btn" href=""><i
+                        class="material-icons">&#xE8B6;</i></a></li>
+                <li class="nav-items " title="Email"><a href=""><i class="material-icons">
+                    &#xE0E1;</i></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="header-quick-link shell" style="border-bottom: 1px solid #CCCCCC;background-color:#fff">
+    <ul id="quickLinks" style="display: inline-block;position: relative;">
+        <li><a href="" class="btn btn-small btn-transparent waves-effect waves-theme-purple"><i>OA</i></a></li>
+        <li><a href="" class="btn btn-small btn-transparent waves-effect waves-theme-purple "><i>E-HR</i></a></li>
+        <li><a href="" class="btn btn-small btn-transparent waves-effect waves-theme-purple"><i>ILearning</i></a></li>
+        <li><a href="" class="btn btn-small btn-transparent waves-effect waves-theme-purple"><i>DMS</i></a></li>
+        <li><a href="" class="btn btn-small btn-transparent waves-effect waves-theme-purple"><i>SAMS</i></a></li>
+        <li><a href="" class="btn btn-small btn-transparent waves-effect waves-theme-purple"><i>Train Info</i></a></li>
+    </ul>
+    <form id="search-form" action="" class="slide-form" style="display: none"><input id="search_input" type="text">
+        <button class="slide-form-btn search-btn" style="left: 0; top: 1px;;"><i class="material-icons">&#xE8B6;</i></button>
+        <button class=" slide-form-btn close-btn" id="close-btn" style="right: 0; top: 1px;"><i class="material-icons">&#xE5CD;</i></button>
+    </form>
+</div>
+<div class="shell" style="background: #fff;">
+    <div class="row">
+        <div class="left-vertical-nav col-3" style="min-height: 1px;height: 476px;margin-top: 10px;">
+            <div class="form-basic active" style="border: none;">
+                <div class="form-title" style="background-color: #ffffff;border-left: 2px solid #513c8a"><span
+                        style="color: #513c8a">E-service</span></div>
+                <div class="input-group"><input type="text" id="euser"><label for="euser">name</label></div>
+                <div class="input-group"><input type="password" id="epwd"><label for="epwd">password</label></div>
+                <div class="button-group" style="text-align: center;position: relative;">
+                    <input type="submit" value="login"
+                           class="btn btn-small btn-outline waves-effect waves-theme-purple">
+                    <a href="" class="slide-form-btn" id="cC_Pwd_btn">Change Password</a>
+                    <a href="" class="slide-form-btn">Reset Password</a>
+                </div>
+            </div>
+            <div class="form-basic active" style="border: none; display:none; width: 300px;"  id="e_cPwd_form">
+                <div class="form-title" style="background-color: #ffffff;border-left: 2px solid #513c8a"><span
+                        style="color: #513c8a">E-service</span></div>
+                <div class="input-group"><input type="text" id="staff_nb"><label for="staff_nb">name</label></div>
+                <div class="input-group"><input type="password" id="cpwd"><label for="cpwd">password</label></div>
+                <div class="input-group"><input type="password" id="cN_Pwd"><label for="cN_Pwd">name</label></div>
+                <div class="input-group"><input type="password" id="cC_Pwd"><label for="cC_Pwd">password</label></div>
+                <div class="button-group" style="text-align: center;position: relative;">
+                    <input type="submit" value="Change Password"
+                           class="btn btn-small btn-outline waves-effect waves-theme-purple">
+                </div>
+            </div>
+            <div class="vertical-nav-list">
+                <div class="title" style=""><span>Quick Links</span></div>
+                <ul>
+                    <li><a href="" class="waves-effect waves-light"><i class="material-icons">&#xE195;</i>Flight
+                        Schedule</a></li>
+                    <li><a href="" class="waves-effect waves-light"><i class="material-icons">&#xE32A;</i>Safety
+                        Zone</a></li>
+                    <li><a href="" class="waves-effect waves-light"><i class="material-icons">&#xE865;</i>Training</a>
+                    </li>
+                    <li><a href="" class="waves-effect waves-light"><i class="material-icons">&#xE616;</i>E-log</a></li>
+                    <li><a href="" class="waves-effect waves-light"><i class="material-icons">&#xE53B;</i><span>Conference Training</span></a>
+                    </li>
+                    <li><a href="" class="waves-effect waves-light"><i class="material-icons">&#xE85D;</i><span>Flight Ops Manual</span></a>
+                    </li>
+                    <li><a href="" class="waves-effect waves-light"><i class="material-icons">&#xE916;</i><span>Rooms Booking</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="news-panel col-6" style="height: 476px;margin-top: 10px;">
+            <div class="top-news">
+                <div class="news-title">
+                    <a href="">Air Macau Promotes Macau Products in Fukuoka <p class="date">2016/June/23</p></a>
+                </div>
+                <div class="img-block"><a href=""><img src="./resource/img/news/1.jpg" alt=""></a></div>
+            </div>
+            <div class="slide-news">
+                <ul>
+                    <li class="active">
+                        <div class="news-title"><a href=""><span>NX supports local education career</span></a></div>
+                        <div class="news-img"><a href=""><img src="./resource/img/news/2.jpg" alt=""></a></div>
+                    </li>
+                    <li>
+                        <div class="news-title"><a href=""><span>Air Macau Promotes Macau Products in Fukuoka</span></a>
+                        </div>
+                        <div class="news-img"><a href=""><img src="./resource/img/news/3.jpg" alt=""></a></div>
+                    </li>
+                    <li>
+                        <div class="news-title"><a href=""><span>NX Inaugural Ceremony of Macau - Fukuoka</span></a>
+                        </div>
+                        <div class="news-img"><a href=""><img src="./resource/img/news/4.jpg" alt=""></a></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="right col-3" style="height:476px;margin-top: 10px;">
+            <div class="news-text_only-list-vertical">
+                <div class="title">Most news</div>
+                <ol style="height: 434px;">
+                    <li><a href="">Fire Prevention Talk & Fighting Drill</a></li>
+                    <li><a href="">Company Orientation 31 May</a></li>
+                    <li><a href="">Fundamental Management Training</a></li>
+                    <li><a href="">Air Macau walks into Hou Kong Middle School, supports local education career</a></li>
+                    <li><a href="">Company Orientation 26-29 Apr 2016</a></li>
+                    <li><a href="">Fundamental Management Training</a></li>
+                    <li><a href="">澳航服務 如沐春風</a></li>
+                    <li><a href=""> Supply-Side Theory and China's Economic Development 2 Apr 2016 27/4/2016</a></li>
+                    <li><a href=""> Air Macau Held Macau Local Cadet Pilot Program Press Conference and Sharing</a></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <div class="row memo-list">
+        <ul>
+            <h3 class="title">Intern Memo</h3>
+            <div class="row">
+                <li class="col-2"><a href="">Casual Wear Summer 2016   23/5/2016</a></li>
+                <li class="col-2"><a href="">Update of MFM Staff Medical   19/5/2016</a></li>
+                <li class="col-2"><a href="">Staff Expense Claim Policy - Trail Version (VPFN026/2016)   6/5/2016</a></li>
+                <li class="col-2"><a href="">Staff Vacancy Notice - CSD   17/3/2016</a></li>
+                <li class="col-2"><a href=""> Chinese New Year Greetings from CEO   3/2/2016</a></li>
+                <li class="col-2"><a href="">Air Macau Opens New Lounge at Macau International Airport   16/9/2015</a></li>
+            </div>
+            <div class="row">
+                <li class="col-2"><a href="">Internal Vacancy (CQD)   6/8/2015</a></li>
+                <li class="col-2"><a href="">Internal Vacancy (COM_FFP)   21/7/2015</a></li>
+                <li class="col-2"><a href="">NX Volunteer Program   21/7/2015</a></li>
+                <li class="col-2"><a href="">Flying with Air Macau A Different In-Flight Experience   14/7/2015</a></li>
+            </div>
+        </ul>
+    </div>
+    <div class="footer">
+        <ul>
+            <li><a href="" class=" btn btn-small btn-transparent waves-effect waves-theme-purple">ABOUT US</a></li>
+            <li><a href="" class=" btn btn-small btn-transparent waves-effect waves-theme-purple">FAQ</a></li>
+            <li><a href="" class=" btn btn-small btn-transparent waves-effect waves-theme-purple">CONTACT US</a></li>
+            <li><a href="" class=" btn btn-small btn-transparent waves-effect waves-theme-purple">QUICK LINKS</a></li>
+            <li><a href="" class=" btn btn-small btn-transparent waves-effect waves-theme-purple">ADVICES</a></li>
+        </ul>
+        <div class="remark" style="font-size: 12px; color: #a0a0a0;">
+            <p>All information posted on the AirMacau Intranet are intellectual properties of AirMacau. Any removal or circulation of the materials and information outside AirMacau without proper authorization will be subject to disciplinary action or dismissal.</p>
+        </div>
+    </div>
+</div>
 </body>
+<script>
+    $(document).ready(function () {
+
+        $("#cC_Pwd_btn").on("click",function (e) {
+            event.preventDefault ? event.preventDefault() : (event.returnValue = false);
+            $("#e_cPwd_form").bPopup();
+        });
+
+        var $header_quick_links = $("#quickLinks");
+        var $search_form = $("#search-form");
+        $("#search-btn").click(function () {
+            event.preventDefault ? event.preventDefault() : (event.returnValue = false);
+            slide_effect($header_quick_links,$search_form);
+        });
+        $("#close-btn").click(function () {
+            event.preventDefault ? event.preventDefault() : (event.returnValue = false);
+            slide_back($header_quick_links,$search_form);
+        });
+    });
+    function slide_effect($slide,$show) {
+        $slide.stop().fadeOut(200,function () {
+            $show.css({"display":"inline-block","opacity":"0","right":"0"});
+            $show.stop().animate({
+                opacity: 1,
+                right: "+=350px"
+            },500,function () {
+                $("#search_input").focus();
+
+            });
+        });
+    }
+    function slide_back($show,$slide) {
+        $slide.stop().animate({
+            right: "+= 300px",
+            opacity: 0
+        },600,function () {
+            $slide.css({"right":"0"});
+            $show.fadeIn(500);
+        })
+    }
+    /*================================================================================
+     * @name: bPopup - if you can't get it up, use bPopup
+     * @author: (c)Bjoern Klinggaard (twitter@bklinggaard)
+     * @demo: http://dinbror.dk/bpopup
+     * @version: 0.9.4.min
+     ================================================================================*/
+    (function(b){b.fn.bPopup=function(z,F){function K(){a.contentContainer=b(a.contentContainer||c);switch(a.content){case "iframe":var h=b('<iframe class="b-iframe" '+a.iframeAttr+"></iframe>");h.appendTo(a.contentContainer);r=c.outerHeight(!0);s=c.outerWidth(!0);A();h.attr("src",a.loadUrl);k(a.loadCallback);break;case "image":A();b("<img />").load(function(){k(a.loadCallback);G(b(this))}).attr("src",a.loadUrl).hide().appendTo(a.contentContainer);break;default:A(),b('<div class="b-ajax-wrapper"></div>').load(a.loadUrl,a.loadData,function(){k(a.loadCallback);G(b(this))}).hide().appendTo(a.contentContainer)}}function A(){a.modal&&b('<div class="b-modal '+e+'"></div>').css({backgroundColor:a.modalColor,position:"fixed",top:0,right:0,bottom:0,left:0,opacity:0,zIndex:a.zIndex+t}).appendTo(a.appendTo).fadeTo(a.speed,a.opacity);D();c.data("bPopup",a).data("id",e).css({left:"slideIn"==a.transition||"slideBack"==a.transition?"slideBack"==a.transition?g.scrollLeft()+u:-1*(v+s):l(!(!a.follow[0]&&m||f)),position:a.positionStyle||"absolute",top:"slideDown"==a.transition||"slideUp"==a.transition?"slideUp"==a.transition?g.scrollTop()+w:x+-1*r:n(!(!a.follow[1]&&p||f)),"z-index":a.zIndex+t+1}).each(function(){a.appending&&b(this).appendTo(a.appendTo)});H(!0)}function q(){a.modal&&b(".b-modal."+c.data("id")).fadeTo(a.speed,0,function(){b(this).remove()});a.scrollBar||b("html").css("overflow","auto");b(".b-modal."+e).unbind("click");g.unbind("keydown."+e);d.unbind("."+e).data("bPopup",0<d.data("bPopup")-1?d.data("bPopup")-1:null);c.undelegate(".bClose, ."+a.closeClass,"click."+e,q).data("bPopup",null);H();return!1}function G(h){var b=h.width(),e=h.height(),d={};a.contentContainer.css({height:e,width:b});e>=c.height()&&(d.height=c.height());b>=c.width()&&(d.width=c.width());r=c.outerHeight(!0);s=c.outerWidth(!0);D();a.contentContainer.css({height:"auto",width:"auto"});d.left=l(!(!a.follow[0]&&m||f));d.top=n(!(!a.follow[1]&&p||f));c.animate(d,250,function(){h.show();B=E()})}function L(){d.data("bPopup",t);c.delegate(".bClose, ."+a.closeClass,"click."+e,q);a.modalClose&&b(".b-modal."+e).css("cursor","pointer").bind("click",q);M||!a.follow[0]&&!a.follow[1]||d.bind("scroll."+e,function(){B&&c.dequeue().animate({left:a.follow[0]?l(!f):"auto",top:a.follow[1]?n(!f):"auto"},a.followSpeed,a.followEasing)}).bind("resize."+e,function(){w=y.innerHeight||d.height();u=y.innerWidth||d.width();if(B=E())clearTimeout(I),I=setTimeout(function(){D();c.dequeue().each(function(){f?b(this).css({left:v,top:x}):b(this).animate({left:a.follow[0]?l(!0):"auto",top:a.follow[1]?n(!0):"auto"},a.followSpeed,a.followEasing)})},50)});a.escClose&&g.bind("keydown."+e,function(a){27==a.which&&q()})}function H(b){function d(e){c.css({display:"block",opacity:1}).animate(e,a.speed,a.easing,function(){J(b)})}switch(b?a.transition:a.transitionClose||a.transition){case "slideIn":d({left:b?l(!(!a.follow[0]&&m||f)):g.scrollLeft()-(s||c.outerWidth(!0))-C});break;case "slideBack":d({left:b?l(!(!a.follow[0]&&m||f)):g.scrollLeft()+u+C});break;case "slideDown":d({top:b?n(!(!a.follow[1]&&p||f)):g.scrollTop()-(r||c.outerHeight(!0))-C});break;case "slideUp":d({top:b?n(!(!a.follow[1]&&p||f)):g.scrollTop()+w+C});break;default:c.stop().fadeTo(a.speed,b?1:0,function(){J(b)})}}function J(b){b?(L(),k(F),a.autoClose&&setTimeout(q,a.autoClose)):(c.hide(),k(a.onClose),a.loadUrl&&(a.contentContainer.empty(),c.css({height:"auto",width:"auto"})))}function l(a){return a?v+g.scrollLeft():v}function n(a){return a?x+g.scrollTop():x}function k(a){b.isFunction(a)&&a.call(c)}function D(){x=p?a.position[1]:Math.max(0,(w-c.outerHeight(!0))/2-a.amsl);v=m?a.position[0]:(u-c.outerWidth(!0))/2;B=E()}function E(){return w>c.outerHeight(!0)&&u>c.outerWidth(!0)}b.isFunction(z)&&(F=z,z=null);var a=b.extend({},b.fn.bPopup.defaults,z);a.scrollBar||b("html").css("overflow","hidden");var c=this,g=b(document),y=window,d=b(y),w=y.innerHeight||d.height(),u=y.innerWidth||d.width(),M=/OS 6(_\d)+/i.test(navigator.userAgent),C=200,t=0,e,B,p,m,f,x,v,r,s,I;c.close=function(){a=this.data("bPopup");e="__b-popup"+d.data("bPopup")+"__";q()};return c.each(function(){b(this).data("bPopup")||(k(a.onOpen),t=(d.data("bPopup")||0)+1,e="__b-popup"+t+"__",p="auto"!==a.position[1],m="auto"!==a.position[0],f="fixed"===a.positionStyle,r=c.outerHeight(!0),s=c.outerWidth(!0),a.loadUrl?K():A())})};b.fn.bPopup.defaults={amsl:50,appending:!0,appendTo:"body",autoClose:!1,closeClass:"b-close",content:"ajax",contentContainer:!1,easing:"swing",escClose:!0,follow:[!0,!0],followEasing:"swing",followSpeed:500,iframeAttr:'scrolling="no" frameborder="0"',loadCallback:!1,loadData:!1,loadUrl:!1,modal:!0,modalClose:!0,modalColor:"#000",onClose:!1,onOpen:!1,opacity:0.7,position:["auto","auto"],positionStyle:"absolute",scrollBar:!0,speed:250,transition:"fadeIn",transitionClose:!1,zIndex:9997}})(jQuery);
+</script>
 </html>
