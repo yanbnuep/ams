@@ -1,9 +1,16 @@
 /*
   1.Fonts
+  2.Global
+  3.Color
+  4.nav
 */
 /* 1. Fonts
    ========================================================================== */
 /* 2. Global
+   ========================================================================== */
+/* 3. Color
+   ========================================================================== */
+/* 4. Global
    ========================================================================== */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -360,32 +367,6 @@ td,
 th {
   padding: 0; }
 
-/*1.Font Roboto*/
-@font-face {
-  font-family: "Roboto";
-  src: local(Roboto Thin), url("../resource/fonts/roboto/Roboto-Thin.eot");
-  src: url("../resource/fonts/roboto/Roboto-Thin.eot?#iefix") format("embedded-opentype"), url("../resource/fonts/roboto/Roboto-Thin.woff2") format("woff2"), url("../resource/fonts/roboto/Roboto-Thin.woff") format("woff"), url("../resource/fonts/roboto/Roboto-Thin.ttf") format("truetype");
-  font-weight: 200; }
-@font-face {
-  font-family: "Roboto";
-  src: local(Roboto Light), url("../resource/fonts/roboto/Roboto-Light.eot");
-  src: url("../resource/fonts/roboto/Roboto-Light.eot?#iefix") format("embedded-opentype"), url("../resource/fonts/roboto/Roboto-Light.woff2") format("woff2"), url("../resource/fonts/roboto/Roboto-Light.woff") format("woff"), url("../resource/fonts/roboto/Roboto-Light.ttf") format("truetype");
-  font-weight: 300; }
-@font-face {
-  font-family: "Roboto";
-  src: local(Roboto Regular), url("../resource/fonts/roboto/Roboto-Regular.eot");
-  src: url("../resource/fonts/roboto/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../resource/fonts/roboto/Roboto-Regular.woff2") format("woff2"), url("../resource/fonts/roboto/Roboto-Regular.woff") format("woff"), url("../resource/fonts/roboto/Roboto-Regular.ttf") format("truetype");
-  font-weight: 400; }
-@font-face {
-  font-family: "Roboto";
-  src: url("../resource/fonts/roboto/Roboto-Medium.eot");
-  src: url("../resource/fonts/roboto/Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("../resource/fonts/roboto/Roboto-Medium.woff2") format("woff2"), url("../resource/fonts/roboto/Roboto-Medium.woff") format("woff"), url("../resource/fonts/roboto/Roboto-Medium.ttf") format("truetype");
-  font-weight: 500; }
-@font-face {
-  font-family: "Roboto";
-  src: url("../resource/fonts/roboto/Roboto-Bold.eot");
-  src: url("../resource/fonts/roboto/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../resource/fonts/roboto/Roboto-Bold.woff2") format("woff2"), url("../resource/fonts/roboto/Roboto-Bold.woff") format("woff"), url("../resource/fonts/roboto/Roboto-Bold.ttf") format("truetype");
-  font-weight: 700; }
 /*2.Global Default styles*/
 html {
   box-sizing: border-box; }
@@ -396,16 +377,16 @@ html {
 body {
   background-color: #f0f0f0; }
 
-.shell {
+.wrapper {
   position: relative;
   width: 960px;
   margin: 0 auto; }
-  .shell:before, .shell:after {
+  .wrapper:before, .wrapper:after {
     content: " ";
     display: table; }
-  .shell:after {
+  .wrapper:after {
     clear: both; }
-  .shell {
+  .wrapper {
     zoom: 1;
     /* For IE 6/7 (trigger hasLayout) */ }
 
@@ -430,19 +411,50 @@ body {
 .z-depth-5 {
   box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22); }
 
-.nav ul {
-  position: relative;
-  display: table;
-  margin: 0;
-  padding: 0;
-  text-align: center; }
-  .nav ul li {
+.left {
+  float: left !important; }
+
+.right {
+  float: right !important; }
+
+.clearfix {
+  *zoom: 1; }
+  .clearfix:before, .clearfix:after {
+    content: "";
+    display: table; }
+  .clearfix:after {
+    clear: both; }
+
+.nav {
+  height: 60px; }
+  .nav ul {
     position: relative;
-    display: table-cell; }
-    .nav ul li a {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    .nav ul li {
       position: relative;
-      display: block;
-      padding: 10px 5px;
-      text-decoration: none; }
+      float: left;
+      display: inline; }
+      .nav ul li a {
+        position: relative;
+        display: block;
+        padding: 0 7.5px;
+        text-decoration: none;
+        line-height: 60px;
+        font-weight: 600;
+        font-size: 13.5px; }
+  .nav.nav-dark {
+    background-color: #312667; }
+    .nav.nav-dark a {
+      color: #e7e7e7; }
+
+.brand {
+  position: relative;
+  top: 12px;
+  height: 35px;
+  padding: 0 5px;
+  width: auto;
+  display: inline; }
 
 /*# sourceMappingURL=ams.css.map */

@@ -1,19 +1,38 @@
 .nav {
-  & ul {
-    position: relative;
-    display: table;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    & li {
-      position: relative;
-      display: table-cell;
-      & a {
-        position: relative;
-        display: block;
-        padding: 10px 5px;
-        text-decoration: none;
-      }
-    }
-  }
+	height: $nav-height;	
+	& ul {
+		position: relative;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		li {
+			position: relative;
+			float: left;
+			display: inline;
+			a {
+				position: relative;
+				display: block;
+				padding: $nav-a-padding;
+				text-decoration: none;
+				line-height: $nav-a-line-height;//1
+				font-weight: $font-weight-2;//500
+				font-size: $nav-a-font-size;
+			}
+		}
+	}	 
+	&.nav-dark {
+		background-color: $theme-dark-color;
+		& a {
+			color: $dark-type-color;
+		}
+	}
+}
+
+.brand {
+	position: relative;
+	top: $brand-top;
+	height: $brand-height;
+	padding: $brand-padding;
+	width: auto;
+	display: inline;
 }

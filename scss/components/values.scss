@@ -1,10 +1,37 @@
 /*
   1.Fonts
+  2.Global
+  3.Color
+  4.nav
 */
-
 /* 1. Fonts
    ========================================================================== */
-$roboto-font-path: "../resource/fonts/roboto/" !default;
+	
+	//font-weight-level
+	$font-weight-0: 				400;
+	$font-weight-1: 				500;
+	$font-weight-2:					600;
+	$font-weight-3:					700;
 
 /* 2. Global
    ========================================================================== */
+  $body-background-color:       	#f0f0f0;
+  $body-width:                    	960px;
+
+/* 3. Color
+   ========================================================================== */
+   $theme-dark-color: 			 	#312667;
+   $dark-type-color:			 	#e7e7e7;
+
+/* 4. Global
+   ========================================================================== */
+   $nav-height:					 	60px;
+   //brand
+   $brand-height:					35px;
+   $brand-top:						floor(($nav-height - $brand-height)/2);
+   $brand-padding:					0 5px;
+   //nav a
+   $nav-a-font-size: 				13.5px;
+   $nav-a-line-height:				$nav-height;
+   $nav-a-padding:					0 7.5px;
+  
