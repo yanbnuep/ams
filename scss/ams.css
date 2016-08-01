@@ -10,7 +10,7 @@
    ========================================================================== */
 /* 3. Color
    ========================================================================== */
-/* 4. Global
+/* 4. Nav
    ========================================================================== */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -443,7 +443,35 @@ body {
         text-decoration: none;
         line-height: 60px;
         font-weight: 600;
-        font-size: 13.5px; }
+        font-size: 13.5px;
+        cursor: pointer; }
+        .nav ul li a:hover {
+          background-color: #5441b2; }
+      .nav ul li form {
+        position: relative;
+        display: block;
+        margin: 0;
+        padding: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        border: 0;
+        background: transparent; }
+        .nav ul li form input {
+          padding: 2px 15px;
+          border: 1px solid #e7e7e7;
+          border-radius: 0;
+          color: #e7e7e7;
+          outline: none;
+          background-color: transparent; }
+        .nav ul li form select {
+          border: none;
+          border-left: 1px solid #e7e7e7;
+          border-radius: 0;
+          font-size: 13px;
+          width: 80px;
+          color: #e7e7e7;
+          background: transparent;
+          outline: none; }
   .nav.nav-dark {
     background-color: #312667; }
     .nav.nav-dark a {

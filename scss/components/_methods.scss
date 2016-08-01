@@ -43,3 +43,24 @@
   zoom: 1;
 
 }
+
+@mixin rem_fallback($property,$values...) {
+  $max: length($values);
+  $pxv: '';
+  $remv: '';
+
+  @for $i from 1 through $max {
+    $v: nth($v,$i);
+    $pxv: #{$pxv + $v*10}px;
+    @if $i < $max {
+      $pxv: #{$pxv + ""};
+    }
+  }
+  @for $i from 1 through $max {
+    $v: nth($v,$i);
+    $remv: #{$pxv + $v}px;
+    @if $i < $max {
+      $remv: #{$remv + ""};
+    }
+  }
+}

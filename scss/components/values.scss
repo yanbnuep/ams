@@ -21,9 +21,12 @@
 /* 3. Color
    ========================================================================== */
    $theme-dark-color: 			 	#312667;
+   $theme-dark-color-lighter:       lighten($theme-dark-color,20%);
    $dark-type-color:			 	#e7e7e7;
+   //colors
+   
 
-/* 4. Global
+/* 4. Nav
    ========================================================================== */
    $nav-height:					 	60px;
    //brand
@@ -34,4 +37,10 @@
    $nav-a-font-size: 				13.5px;
    $nav-a-line-height:				$nav-height;
    $nav-a-padding:					0 7.5px;
+   //nav-form
+   $nav-input-padding:              2px 15px;
+   $nav-input-border:               1px solid $dark-type-color;
+   $nav-input-radius:               0;
+   $nav-select-width:               80px;//default;
+   $nav-select-font-size:           13px;//default;
   
