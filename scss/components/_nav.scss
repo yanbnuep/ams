@@ -1,79 +1,87 @@
 .nav {
-	height: $nav-height;	
-	& ul {
-		position: relative;
-		margin: 0;
-		padding: 0;
-		list-style: none;
-		li {
-			position: relative;
-			float: left;
-			display: inline;
+  height: $nav-height;
+  & ul {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+      position: relative;
+      float: left;
+      display: inline;
 
-			a {
-				position: relative;
-				display: block;
-				padding: $nav-a-padding;
-				text-decoration: none;
-				line-height: $nav-a-line-height;//60px
-				font-weight: $font-weight-2;//500
-				font-size: $nav-a-font-size;
-                cursor: pointer;
-              &:hover {
-                background-color: $theme-dark-color-lighter;
-              }
-			}
+      a {
+        position: relative;
+        display: block;
+        padding: $nav-a-padding;
+        text-decoration: none;
+        line-height: $nav-a-line-height; //60px
+        font-weight: $font-weight-2; //500
+        font-size: $nav-a-font-size;
+        cursor: pointer;
+        &:hover {
+          background-color: $theme-dark-color-lighter;
+        }
+      }
 
-            form {
-              position: relative;
-              display: block;
-              margin: 0;
-              padding: 0;
-              font-size: 100%;
-              vertical-align: baseline;
-              border: 0;
-              background: transparent;
+      form {
+        position: relative;
+        display: block;
+        margin: 0;
+        padding: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        border: 0;
+        background: transparent;
 
-              input {
-                padding: $nav-input-padding;
-                border: $nav-input-border;
-                border-radius: $nav-input-radius;
-                color: $dark-type-color;
-                outline: none;
-                background-color: transparent;
+        input {
+          padding: $nav-input-padding;
+          border: $nav-input-border;
+          border-radius: $nav-input-radius;
+          color: $dark-type-color;
+          outline: none;
+          font-size: 13.5px;
+          background-color: transparent;
+          &:focus {
 
-                &:focus {
+          }
+        }
 
-                }
-              }
+        select {
+          border: none;
+          border-left: 1px solid $dark-type-color;
+          border-radius: 0;
+          font-size: $nav-select-font-size;
+          width: $nav-select-width;
+          color: $dark-type-color;
+          background: transparent;
+          outline: none;
 
-              select {
-                border: none;
-                border-left: 1px solid $dark-type-color;
-                border-radius: 0;
-                font-size: $nav-select-font-size;
-                width:  $nav-select-width;
-                color: $dark-type-color;
-                background: transparent;
-                outline: none;
-
-              }
-            }
-		}
-	}	 
-	&.nav-dark {
-		background-color: $theme-dark-color;
-		& a {
-			color: $dark-type-color;
-		}
-	}
+        }
+        i {
+          position: absolute;
+          float:left;
+          font-weight: $font-weight-0;
+        }
+      }
+    }
+  }
+  &.nav-dark {
+    background-color: $theme-dark-color;
+    & a {
+      color: $dark-type-color;
+    }
+    & i {
+      color: $dark-type-color;
+    }
+  }
 }
 
 .brand {
-	position: relative;
-	top: $brand-top;
-	height: $brand-height;
-	padding: $brand-padding;
-	width: auto;
-	display: inline;
+  position: relative;
+  top: $brand-top;
+  height: $brand-height;
+  padding: $brand-padding;
+  width: auto;
+  display: inline;
 }
