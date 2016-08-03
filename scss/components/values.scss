@@ -21,7 +21,7 @@
 /* 3. Color
    ========================================================================== */
    $theme-dark-color: 			 	#312667;
-   $theme-dark-color-lighter:       lighten($theme-dark-color,20%);
+   $theme-dark-color-lighter:       lighten($theme-dark-color,10%);
    $dark-type-color:			 	#e7e7e7;
    //colors
    
@@ -43,4 +43,11 @@
    $nav-input-radius:               0;
    $nav-select-width:               80px;//default;
    $nav-select-font-size:           13px;//default;
-  
+   //second nav
+   $second-nav-margin:              0;
+   $second-nav-padding:             10px 1px;
+   $second-nav-width:               250px;
+   $second-nav-line-height:         40px;
+   //drop down icon
+   $drop_down-border-hidden:         5px solid transparent;
+   $drop_down-border-show:           5px solid $dark-type-color;

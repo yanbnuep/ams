@@ -9,7 +9,24 @@
       position: relative;
       float: left;
       display: inline;
-
+      &.has-drown>a:after {
+        content:"";
+        position: relative;
+        width: 0;
+        height: 0;
+        border: none;
+        top: 10px;
+        left: 3px;
+        border-left: $drop_down-border-hidden;
+        border-right: $drop_down-border-hidden;
+        border-top: $drop_down-border-show;
+      }
+      &:hover ul {
+        left: 0;//show hidden ul;
+      }
+      &:hover {
+        background-color: $theme-dark-color-lighter;
+      }
       a {
         position: relative;
         display: block;
@@ -19,9 +36,7 @@
         font-weight: $font-weight-2; //500
         font-size: $nav-a-font-size;
         cursor: pointer;
-        &:hover {
-          background-color: $theme-dark-color-lighter;
-        }
+        white-space: nowrap;
       }
 
       form {
@@ -65,6 +80,22 @@
         }
       }
     }
+    & ul.second-nav {
+      position: absolute;
+      left: -999999999px; //hide ul
+      margin: $second-nav-margin;
+      padding: $second-nav-padding;
+      width: $second-nav-width;
+
+      li,a{
+        display: block;
+        clear: both;
+        width: 100%;
+      }
+      li a {
+        line-height: $second-nav-line-height;
+      }
+    }
   }
   &.nav-dark {
     background-color: $theme-dark-color;
@@ -73,6 +104,12 @@
     }
     & i {
       color: $dark-type-color;
+    }
+    ul.second-nav {
+      background-color: $theme-dark-color-lighter;
+      li:hover {
+        background-color: $theme-dark-color;
+      }
     }
   }
 }
