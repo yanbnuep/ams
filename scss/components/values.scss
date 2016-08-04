@@ -21,7 +21,7 @@
 /* 3. Color
    ========================================================================== */
    $theme-dark-color: 			 	#312667;
-   $theme-dark-color-lighter:       lighten($theme-dark-color,10%);
+   $theme-dark-color-lighter:       lighten($theme-dark-color,15%);
    $dark-type-color:			 	#e7e7e7;
    //colors
    
@@ -36,7 +36,7 @@
    //nav a
    $nav-a-font-size: 				13.5px;
    $nav-a-line-height:				$nav-height;
-   $nav-a-padding:					0 7.5px;
+   $nav-a-padding:					0 15px;
    //nav-form
    $nav-input-padding:              2px 15px;
    $nav-input-border:               1px solid $dark-type-color;
