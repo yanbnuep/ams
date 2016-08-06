@@ -570,8 +570,8 @@ body {
   .list-panel a {
     display: block;
     text-decoration: none;
-    font-size: 16px;
-    color: rgba(0, 0, 0, 0.87059); }
+    font-size: 15px;
+    color: #222; }
     .list-panel a:before, .list-panel a:after {
       content: " ";
       display: table; }
