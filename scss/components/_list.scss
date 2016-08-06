@@ -7,6 +7,8 @@
   a {
     display: block;
     text-decoration: none;
+    font-size: 16px;
+    color: $black-type-color;
     @include clearfix();
   }
   .list-icon {

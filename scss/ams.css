@@ -543,7 +543,7 @@ body {
       color: #e7e7e7; }
     .nav.nav-dark ul.second-nav {
       background-color: #4c3b9f; }
-      .nav.nav-dark ul.second-nav li:hover {
+      .nav.nav-dark ul.second-nav li:hover, .nav.nav-dark ul.second-nav li:active, .nav.nav-dark ul.second-nav li:focus {
         background-color: #312667; }
 
 .brand {
@@ -569,7 +569,9 @@ body {
     /* For IE 6/7 (trigger hasLayout) */ }
   .list-panel a {
     display: block;
-    text-decoration: none; }
+    text-decoration: none;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.87059); }
     .list-panel a:before, .list-panel a:after {
       content: " ";
       display: table; }

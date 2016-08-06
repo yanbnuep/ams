@@ -107,7 +107,7 @@
     }
     ul.second-nav {
       background-color: $theme-dark-color-lighter;
-      li:hover {
+      li:hover,li:active,li:focus {
         background-color: $theme-dark-color;
       }
     }
