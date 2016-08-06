@@ -3,6 +3,7 @@
   2.Global
   3.Color
   4.nav
+  5.list
 */
 /* 1. Fonts
    ========================================================================== */
@@ -11,6 +12,8 @@
 /* 3. Color
    ========================================================================== */
 /* 4. Nav
+   ========================================================================== */
+/* 5. List
    ========================================================================== */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -550,5 +553,39 @@ body {
   padding: 0 5px;
   width: auto;
   display: inline; }
+
+.list-panel {
+  position: relative;
+  padding: 15px 5px;
+  width: auto;
+  background-color: #fff; }
+  .list-panel:before, .list-panel:after {
+    content: " ";
+    display: table; }
+  .list-panel:after {
+    clear: both; }
+  .list-panel {
+    zoom: 1;
+    /* For IE 6/7 (trigger hasLayout) */ }
+  .list-panel a {
+    display: block;
+    text-decoration: none; }
+    .list-panel a:before, .list-panel a:after {
+      content: " ";
+      display: table; }
+    .list-panel a:after {
+      clear: both; }
+    .list-panel a {
+      zoom: 1;
+      /* For IE 6/7 (trigger hasLayout) */ }
+  .list-panel .list-icon {
+    position: relative;
+    float: left;
+    left: 5px; }
+    .list-panel .list-icon i {
+      position: relative; }
+  .list-panel .list-text {
+    padding: 5px 15px 5px 35px;
+    white-space: nowrap; }
 
 /*# sourceMappingURL=ams.css.map */

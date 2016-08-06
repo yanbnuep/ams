@@ -1,0 +1,25 @@
+.list-panel {
+  position: relative;
+  padding: $list-panel-padding;
+  width: auto;
+  background-color: $color-white;
+  @include clearfix();
+  a {
+    display: block;
+    text-decoration: none;
+    @include clearfix();
+  }
+  .list-icon {
+    position: relative;
+    float: left;
+    left: 5px;
+    i {
+      position: relative;
+    }
+  }
+
+  .list-text {
+    padding: $list-text-padding;
+    white-space: nowrap;
+  }
+}

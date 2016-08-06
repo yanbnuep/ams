@@ -3,51 +3,57 @@
   2.Global
   3.Color
   4.nav
+  5.list
 */
 /* 1. Fonts
    ========================================================================== */
-	
-	//font-weight-level
-	$font-weight-0: 				400;
-	$font-weight-1: 				500;
-	$font-weight-2:					600;
-	$font-weight-3:					700;
+
+//font-weight-level
+$font-weight-0: 400;
+$font-weight-1: 500;
+$font-weight-2: 600;
+$font-weight-3: 700;
 
 /* 2. Global
    ========================================================================== */
-  $body-background-color:       	#f0f0f0;
-  $body-width:                    	960px;
+$body-background-color: #f0f0f0;
+$body-width: 960px;
 
 /* 3. Color
    ========================================================================== */
-   $theme-dark-color: 			 	#312667;
-   $theme-dark-color-lighter:       lighten($theme-dark-color,15%);
-   $dark-type-color:			 	#e7e7e7;
-   //colors
-   
+$color-white:           #fff;
+$theme-dark-color: #312667;
+$theme-dark-color-lighter: lighten($theme-dark-color, 15%);
+$dark-type-color: #e7e7e7;
+//colors
 
 /* 4. Nav
    ========================================================================== */
-   $nav-height:					 	60px;
-   //brand
-   $brand-height:					35px;
-   $brand-top:						floor(($nav-height - $brand-height)/2);
-   $brand-padding:					0 5px;
-   //nav a
-   $nav-a-font-size: 				13.5px;
-   $nav-a-line-height:				$nav-height;
-   $nav-a-padding:					0 15px;
-   //nav-form
-   $nav-input-padding:              2px 15px;
-   $nav-input-border:               1px solid $dark-type-color;
-   $nav-input-radius:               0;
-   $nav-select-width:               80px;//default;
-   $nav-select-font-size:           13px;//default;
-   //second nav
-   $second-nav-margin:              0;
-   $second-nav-padding:             10px 1px;
-   $second-nav-width:               250px;
-   $second-nav-line-height:         40px;
-   //drop down icon
-   $drop_down-border-hidden:         5px solid transparent;
-   $drop_down-border-show:           5px solid $dark-type-color;
+$nav-height: 60px;
+//brand
+$brand-height: 35px;
+$brand-top: floor(($nav-height - $brand-height)/2);
+$brand-padding: 0 5px;
+//nav a
+$nav-a-font-size: 13.5px;
+$nav-a-line-height: $nav-height;
+$nav-a-padding: 0 15px;
+//nav-form
+$nav-input-padding: 2px 15px;
+$nav-input-border: 1px solid $dark-type-color;
+$nav-input-radius: 0;
+$nav-select-width: 80px; //default;
+$nav-select-font-size: 13px; //default;
+//second nav
+$second-nav-margin: 0;
+$second-nav-padding: 10px 1px;
+$second-nav-width: 250px;
+$second-nav-line-height: 40px;
+//drop down icon
+$drop_down-border-hidden: 5px solid transparent;
+$drop_down-border-show: 5px solid $dark-type-color;
+
+/* 5. List
+   ========================================================================== */
+$list-panel-padding:   15px 5px;
+$list-text-padding:    5px 15px 5px 35px;
