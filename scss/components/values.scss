@@ -22,6 +22,7 @@ $body-width: 960px;
 /* 3. Color
    ========================================================================== */
 $color-white:           #fff;
+$color-white-darker:    #fafafa;
 $theme-dark-color: #312667;
 $theme-dark-color-lighter: lighten($theme-dark-color, 15%);
 $dark-type-color: #e7e7e7;
@@ -56,5 +57,5 @@ $drop_down-border-show: 5px solid $dark-type-color;
 
 /* 5. List
    ========================================================================== */
-$list-panel-padding:   15px 5px;
-$list-text-padding:    5px 15px 5px 35px;
+$list-panel-padding:   15px 0px;
+$list-text-padding:    5px 15px 5px 40px;
