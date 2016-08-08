@@ -9,7 +9,10 @@ html {
 body {
   background-color: $body-background-color;
 }
-
+a {
+  color: inherit;
+  text-decoration: none;
+}
 .wrapper {
   position: relative;
   width: $body-width;

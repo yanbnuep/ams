@@ -4,6 +4,7 @@
   3.Color
   4.nav
   5.list
+  6.gallery
 */
 /* 1. Fonts
    ========================================================================== */
@@ -16,7 +17,7 @@ $font-weight-3: 700;
 
 /* 2. Global
    ========================================================================== */
-$body-background-color: #f0f0f0;
+$body-background-color: #F1F4F6;
 $body-width: 960px;
 
 /* 3. Color
@@ -27,6 +28,9 @@ $theme-dark-color: #312667;
 $theme-dark-color-lighter: lighten($theme-dark-color, 15%);
 $dark-type-color: #e7e7e7;
 $black-type-color: rgba(0, 0, 0, 0.870588);
+$color-dark-type: #3B4A51;
+$color-gray:     #C0C0C0;
+$color-gray-darker: darken($color-gray, 25%);
 //colors
 
 /* 4. Nav
@@ -55,7 +59,13 @@ $second-nav-line-height: 40px;
 $drop_down-border-hidden: 5px solid transparent;
 $drop_down-border-show: 5px solid $dark-type-color;
 
+
 /* 5. List
    ========================================================================== */
-$list-panel-padding:   15px 0px;
-$list-text-padding:    5px 15px 5px 40px;
+$list-panel-padding:   0 0 15px 0;
+$list-text-padding:    5px 15px 5px 45px;
+
+/* 6. Gallery
+   ========================================================================== */
+$title-padding:         15px 5px;
+$title-border-radius:   0 0 4px 4px;

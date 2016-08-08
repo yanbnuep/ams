@@ -21,7 +21,7 @@
         border-right: $drop_down-border-hidden;
         border-top: $drop_down-border-show;
       }
-      &:hover ul {
+      &:hover .second-nav {
         left: 0;//show hidden ul;
       }
       &:hover {
@@ -86,7 +86,7 @@
       margin: $second-nav-margin;
       padding: $second-nav-padding;
       width: $second-nav-width;
-
+      z-index: 999;
       li,a{
         display: block;
         clear: both;
@@ -94,6 +94,10 @@
       }
       li a {
         line-height: $second-nav-line-height;
+      }
+
+      a {
+        white-space: nowrap;
       }
     }
   }
@@ -121,4 +125,14 @@
   padding: $brand-padding;
   width: auto;
   display: inline;
+}
+
+.app-bar {
+  width: 100%;
+  height: 30px;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 600;
+  color: $dark-type-color;
+  background-color: $theme-dark-color-lighter;
 }

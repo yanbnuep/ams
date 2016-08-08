@@ -4,6 +4,7 @@
   3.Color
   4.nav
   5.list
+  6.gallery
 */
 /* 1. Fonts
    ========================================================================== */
@@ -14,6 +15,8 @@
 /* 4. Nav
    ========================================================================== */
 /* 5. List
+   ========================================================================== */
+/* 6. Gallery
    ========================================================================== */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -407,7 +410,11 @@ html {
   box-sizing: inherit; }
 
 body {
-  background-color: #f0f0f0; }
+  background-color: #F1F4F6; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
 
 .wrapper {
   position: relative;
@@ -479,7 +486,7 @@ body {
         border-left: 5px solid transparent;
         border-right: 5px solid transparent;
         border-top: 5px solid #e7e7e7; }
-      .nav ul li:hover ul {
+      .nav ul li:hover .second-nav {
         left: 0; }
       .nav ul li:hover {
         background-color: #4c3b9f; }
@@ -528,13 +535,16 @@ body {
       left: -999999999px;
       margin: 0;
       padding: 10px 1px;
-      width: 250px; }
+      width: 250px;
+      z-index: 999; }
       .nav ul ul.second-nav li, .nav ul ul.second-nav a {
         display: block;
         clear: both;
         width: 100%; }
       .nav ul ul.second-nav li a {
         line-height: 40px; }
+      .nav ul ul.second-nav a {
+        white-space: nowrap; }
   .nav.nav-dark {
     background-color: #312667; }
     .nav.nav-dark a {
@@ -554,9 +564,18 @@ body {
   width: auto;
   display: inline; }
 
+.app-bar {
+  width: 100%;
+  height: 30px;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 600;
+  color: #e7e7e7;
+  background-color: #4c3b9f; }
+
 .list-panel {
   position: relative;
-  padding: 15px 0px;
+  padding: 0 0 15px 0;
   width: auto;
   background-color: #fafafa; }
   .list-panel:before, .list-panel:after {
@@ -570,11 +589,10 @@ body {
   .list-panel a {
     display: block;
     text-decoration: none;
-    font-size: 14px;
-    font-weight: 400;
     cursor: pointer;
     fill: #757575;
-    color: rgba(0, 0, 0, 0.8); }
+    color: rgba(0, 0, 0, 0.75);
+    * color: #000; }
     .list-panel a:before, .list-panel a:after {
       content: " ";
       display: table; }
@@ -586,17 +604,60 @@ body {
   .list-panel .list-icon {
     position: relative;
     float: left;
-    left: 5px; }
+    left: 15px; }
     .list-panel .list-icon i {
       position: relative; }
     .list-panel .list-icon i.material-icons {
-      font-size: 22px;
-      line-height: 22px; }
+      *color: #000;
+      color: inherit;
+      font-size: 21px;
+      font-weight: 100;
+      line-height: 26px; }
   .list-panel .list-text {
-    padding: 5px 15px 5px 40px;
+    padding: 5px 15px 5px 45px;
+    line-height: 15px;
+    font-weight: 500;
+    font-size: 14px;
     white-space: nowrap;
+    color: rgba(0, 0, 0, 0.9);
     transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; }
     .list-panel .list-text:hover {
-      background-color: rgba(0, 0, 0, 0.1); }
+      background-color: rgba(0, 0, 0, 0.2);
+      * background-color: #c0c0c0; }
+
+.slide-gallery {
+  position: relative;
+  float: left; }
+  .slide-gallery:before, .slide-gallery:after {
+    content: " ";
+    display: table; }
+  .slide-gallery:after {
+    clear: both; }
+  .slide-gallery {
+    zoom: 1;
+    /* For IE 6/7 (trigger hasLayout) */ }
+  .slide-gallery .img {
+    min-width: 400px;
+    max-width: 430px;
+    min-height: 250px;
+    background-color: #fff; }
+  .slide-gallery .title {
+    color: #3B4A51;
+    font-size: 16px;
+    padding: 15px 5px;
+    border-radius: 0 0 4px 4px;
+    background-color: #fff;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap; }
+    .slide-gallery .title a {
+      display: block;
+      font-weight: 500;
+      color: #3B4A51; }
+    .slide-gallery .title p.sub-title {
+      margin: 0;
+      line-height: 18px;
+      font-size: 12px;
+      color: gray; }
 
 /*# sourceMappingURL=ams.css.map */
