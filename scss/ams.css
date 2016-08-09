@@ -510,7 +510,7 @@ a {
         border: 0;
         background: transparent; }
         .nav ul li form input {
-          padding: 2px 15px;
+          padding: 5px 12px;
           border: 1px solid #e7e7e7;
           border-radius: 0;
           color: #e7e7e7;
@@ -659,5 +659,17 @@ a {
       line-height: 18px;
       font-size: 12px;
       color: gray; }
+
+.row {
+  position: relative;
+  min-height: 1px; }
+  .row:before, .row:after {
+    content: " ";
+    display: table; }
+  .row:after {
+    clear: both; }
+  .row {
+    zoom: 1;
+    /* For IE 6/7 (trigger hasLayout) */ }
 
 /*# sourceMappingURL=ams.css.map */
