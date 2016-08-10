@@ -24,12 +24,13 @@
             </li>
             <li><a href="">Download</a></li>
             <li><a href="">Links</a></li>
-            <li style="position: relative; left: 50px;top:13px;">
-                <form action=""><i class="material-icons" style="left: 130px;">&#xE8B6;</i><input type="text" style="width: 130px;height: 26px;border: none;border-bottom: 2px solid #e7e7e7;position:relative"></form>
-            </li>
         </ul>
         <ul class="right">
-            <li><a href="" style="padding: 0 15px;line-height: 1;"><i class="material-icons"style="position: relative;line-height: 60px;font-size: 20px;">&#xE0BE;</i></a></li>
+            <li style="display: table;height: 60px;left: -25px;" id="search">
+                <style>#search:hover{background-color: #312667}</style>
+                <form action="" style="display: table-cell;vertical-align: middle"><i class="material-icons"style="left: 120px;">&#xE8B6;</i><input type="text" style="border: 2px solid #ccc;border-radius: 15px;width: 150px;padding-right: 30px;font-weight: 600;font-size: 15px;background-color:#4c3b9f"></form>
+            </li>
+            <li style="display: table;"><a href="" style="padding: 0 15px;line-height: 1;"><i class="material-icons"style="position: relative;line-height: 60px;font-size: 20px;display: table-cell;vertical-align: middle">&#xE0BE;</i></a></li>
             <li><a href="" style="padding: 0 7px;">CheckIn</a></li>
         </ul>
     </div>
@@ -41,7 +42,10 @@
             <a href="" style="margin-top: 15px">
                 <div class="list-icon"><i class="material-icons">&#xE84F;</i></div>
                 <div class="list-text">Centralized Manuals</div>
-            </a><a href="">
+            </a>            </a><a href="">
+            <div class="list-icon"><i class="material-icons">&#xE7FD;</i></div>
+            <div class="list-text">CEO Messages<span id="ceo-new-message" class="z-depth-1" style="float:right;position: relative;left:-15px;border:1px solid transparent;border-radius: 18px;background-color:#E91E63;width: 18px;height:18px;padding-left: 5px;font-size: 11px;font-weight: 600;color:#e7e7e7;padding-top: 1px;top: -3px;">1</span></div>
+        </a><a href="">
             <div class="list-icon"><i class="material-icons">&#xE878;</i></div>
             <div class="list-text">Corporate Quality Center</div>
         </a><a href="" style="margin-top: 30px;">
@@ -89,7 +93,6 @@
             <p class="sub-title">Issued by Air Macau on 20th May2016</p></div>
     </div>
     <div class="right-group" style="position: relative; float: right;top: 20px;display: block;">
-        <a href="" style="display: block;position: relative;background-color:#3a2d7a;padding: 5px 15px;color:#f0f0f0;border-radius: 5px;">CEO Messages</a>
     </div>
 </div>
 </body>
