@@ -1,0 +1,28 @@
+form {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0;
+
+  .ipt-grp {
+    position: relative;
+  }
+
+  input {
+    outline: none;
+
+  }
+  input:focus ~ label, input:valid ~ label {
+
+    color: #5264AE;
+  }
+}
+
+.form-vertical {
+  .ipt-grp {
+    display: block;
+  }
+
+}
+
+

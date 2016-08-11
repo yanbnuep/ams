@@ -5,6 +5,8 @@
   4.nav
   5.list
   6.gallery
+  7.grid
+  8.form
 */
 /* 1. Fonts
    ========================================================================== */
@@ -17,6 +19,10 @@
 /* 5. List
    ========================================================================== */
 /* 6. Gallery
+   ========================================================================== */
+/* 7. Grid
+   ========================================================================== */
+/* 8. Form
    ========================================================================== */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -429,6 +435,15 @@ a {
     zoom: 1;
     /* For IE 6/7 (trigger hasLayout) */ }
 
+.clear:before, .clear:after {
+  content: " ";
+  display: table; }
+.clear:after {
+  clear: both; }
+.clear {
+  zoom: 1;
+  /* For IE 6/7 (trigger hasLayout) */ }
+
 .z-depth-0 {
   box-shadow: none !important; }
 
@@ -661,6 +676,7 @@ a {
       color: gray; }
 
 .row {
+  display: block;
   position: relative;
   min-height: 1px; }
   .row:before, .row:after {
@@ -671,5 +687,20 @@ a {
   .row {
     zoom: 1;
     /* For IE 6/7 (trigger hasLayout) */ }
+
+form {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0; }
+  form .ipt-grp {
+    position: relative; }
+  form input {
+    outline: none; }
+  form input:focus ~ label, form input:valid ~ label {
+    color: #5264AE; }
+
+.form-vertical .ipt-grp {
+  display: block; }
 
 /*# sourceMappingURL=ams.css.map */
