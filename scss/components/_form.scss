@@ -3,26 +3,45 @@ form {
   display: block;
   margin: 0;
   padding: 0;
-
+  .title {
+    display: block;
+  }
   .ipt-grp {
     position: relative;
   }
 
   input {
+    position: relative;
     outline: none;
-
   }
   input:focus ~ label, input:valid ~ label {
-
     color: #5264AE;
   }
 }
 
 .form-vertical {
   .ipt-grp {
-    display: block;
+    display: inline-block;
   }
 
+}
+
+.mdl-form {
+  input {
+    width: 150px;
+    font-size: 14px;
+    border: none;
+    border-bottom: $mdl-form-border;
+  }
+  .ipt-grp {
+    position: relative;
+    line-height: 20px;
+  }
+  .ipt-title {
+    position: absolute;
+    float: left;
+    font-size: 11.5px;
+  }
 }
 
 

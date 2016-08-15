@@ -693,14 +693,30 @@ form {
   display: block;
   margin: 0;
   padding: 0; }
+  form .title {
+    display: block; }
   form .ipt-grp {
     position: relative; }
   form input {
+    position: relative;
     outline: none; }
   form input:focus ~ label, form input:valid ~ label {
     color: #5264AE; }
 
 .form-vertical .ipt-grp {
-  display: block; }
+  display: inline-block; }
+
+.mdl-form input {
+  width: 150px;
+  font-size: 14px;
+  border: none;
+  border-bottom: 1px solid #c0c0c0; }
+.mdl-form .ipt-grp {
+  position: relative;
+  line-height: 20px; }
+.mdl-form .ipt-title {
+  position: absolute;
+  float: left;
+  font-size: 11.5px; }
 
 /*# sourceMappingURL=ams.css.map */
