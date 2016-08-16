@@ -706,6 +706,12 @@ form {
 .form-vertical .ipt-grp {
   display: inline-block; }
 
+.mdl-form span {
+  text-align: left;
+  font-weight: 600;
+  color: #312667;
+  padding: 7.5px 15px;
+  border-left: 5px solid #312667; }
 .mdl-form input {
   width: 150px;
   font-size: 14px;
