@@ -7,6 +7,7 @@
   6.gallery
   7.grid
   8.form
+  9.cards
 */
 /* 1. Fonts
    ========================================================================== */
@@ -23,6 +24,8 @@
 /* 7. Grid
    ========================================================================== */
 /* 8. Form
+   ========================================================================== */
+/* 9. Cards
    ========================================================================== */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -724,5 +727,30 @@ form {
   position: absolute;
   float: left;
   font-size: 11.5px; }
+
+.card {
+  position: relative;
+  display: block;
+  float: left;
+  text-align: center; }
+  .card:before, .card:after {
+    content: " ";
+    display: table; }
+  .card:after {
+    clear: both; }
+  .card {
+    zoom: 1;
+    /* For IE 6/7 (trigger hasLayout) */ }
+  .card .title {
+    vertical-align: baseline; }
+    .card .title .sub-title {
+      font-size: 11px; }
+  .card:before {
+    content: '';
+    position: absolute;
+    left: -2px;
+    width: 1px;
+    height: 100%;
+    background-color: #000000; }
 
 /*# sourceMappingURL=ams.css.map */

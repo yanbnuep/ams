@@ -1,0 +1,25 @@
+.card {
+  position: relative;
+  display: block;
+  float: left;
+  text-align: center;
+  @include clearfix();
+
+  img {
+
+  }
+  .title {
+    vertical-align: baseline;
+    .sub-title {
+      font-size: 11px;
+    }
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    left: -2px;
+    width: 1px;
+    height: 100%;
+    background-color: #000000;
+  }
+}
