@@ -3,23 +3,30 @@
   display: block;
   float: left;
   text-align: center;
+  overflow: hidden;
   @include clearfix();
 
   img {
-
+    width: 100%;
+    position: relative;
   }
   .title {
+    color: $color-dark-type;
+    padding: 0 5px;
     vertical-align: baseline;
+    text-align: left;
     .sub-title {
-      font-size: 11px;
+      text-align: right;
+      font-size: 10px;
     }
   }
   &:before {
     content: '';
     position: absolute;
-    left: -2px;
+    left: -5px;
     width: 1px;
-    height: 100%;
-    background-color: #000000;
+    height: 90%;
+    z-index: 999;
+    background-color: #e2e2e2;
   }
 }

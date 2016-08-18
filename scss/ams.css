@@ -732,7 +732,8 @@ form {
   position: relative;
   display: block;
   float: left;
-  text-align: center; }
+  text-align: center;
+  overflow: hidden; }
   .card:before, .card:after {
     content: " ";
     display: table; }
@@ -741,16 +742,24 @@ form {
   .card {
     zoom: 1;
     /* For IE 6/7 (trigger hasLayout) */ }
+  .card img {
+    width: 100%;
+    position: relative; }
   .card .title {
-    vertical-align: baseline; }
+    color: #3B4A51;
+    padding: 0 5px;
+    vertical-align: baseline;
+    text-align: left; }
     .card .title .sub-title {
-      font-size: 11px; }
+      text-align: right;
+      font-size: 10px; }
   .card:before {
     content: '';
     position: absolute;
-    left: -2px;
+    left: -5px;
     width: 1px;
-    height: 100%;
-    background-color: #000000; }
+    height: 90%;
+    z-index: 999;
+    background-color: #e2e2e2; }
 
 /*# sourceMappingURL=ams.css.map */
