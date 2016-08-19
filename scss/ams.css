@@ -423,6 +423,7 @@ body {
 
 a {
   color: inherit;
+  cursor: pointer;
   text-decoration: none; }
 
 .wrapper {
@@ -590,6 +591,13 @@ a {
   font-weight: 600;
   color: #e7e7e7;
   background-color: #4c3b9f; }
+
+.footer {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  float: left; }
 
 .list-panel {
   position: relative;
