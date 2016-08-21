@@ -596,8 +596,14 @@ a {
   display: block;
   position: relative;
   margin: 0;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0;
-  float: left; }
+  clear: both;
+  text-align: center; }
+  .footer .footer-list-item {
+    display: inline-block;
+    *display: inline; }
 
 .list-panel {
   position: relative;
